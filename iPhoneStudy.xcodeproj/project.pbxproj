@@ -22,14 +22,14 @@
 		A39AC2B9156E2373007B245F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A39AC2BB156E2373007B245F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A39AC2BD156E2373007B245F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A39AC2C1156E2373007B245F /* iPhoneStudy-Info.plist */ = {isa = PBXFileReference; path = "iPhoneStudy-Info.plist"; sourceTree = "<group>"; };
+		A39AC2C1156E2373007B245F /* iPhoneStudy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPhoneStudy-Info.plist"; sourceTree = "<group>"; };
 		A39AC2C3156E2373007B245F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A39AC2C5156E2373007B245F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A39AC2C7156E2373007B245F /* iPhoneStudy-Prefix.pch */ = {isa = PBXFileReference; path = "iPhoneStudy-Prefix.pch"; sourceTree = "<group>"; };
-		A39AC2C8156E2373007B245F /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A39AC2C7156E2373007B245F /* iPhoneStudy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPhoneStudy-Prefix.pch"; sourceTree = "<group>"; };
+		A39AC2C8156E2373007B245F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A39AC2C9156E2373007B245F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A39AC2CC156E2373007B245F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A39AC2CE156E2373007B245F /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A39AC2CE156E2373007B245F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A39AC2CF156E2373007B245F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +77,7 @@
 		A39AC2BF156E2373007B245F /* iPhoneStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A39AC2D7156E347F007B245F /* Day01 */,
 				A39AC2C8156E2373007B245F /* AppDelegate.h */,
 				A39AC2C9156E2373007B245F /* AppDelegate.m */,
 				A39AC2CB156E2373007B245F /* MainStoryboard.storyboard */,
@@ -96,6 +97,13 @@
 				A39AC2C7156E2373007B245F /* iPhoneStudy-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A39AC2D7156E347F007B245F /* Day01 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Day01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
