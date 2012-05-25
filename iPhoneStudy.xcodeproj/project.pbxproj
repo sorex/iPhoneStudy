@@ -14,7 +14,10 @@
 		A39AC2C6156E2373007B245F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A39AC2C5156E2373007B245F /* main.m */; };
 		A39AC2CA156E2373007B245F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A39AC2C9156E2373007B245F /* AppDelegate.m */; };
 		A39AC2CD156E2373007B245F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39AC2CB156E2373007B245F /* MainStoryboard.storyboard */; };
-		A39AC2D0156E2373007B245F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A39AC2CF156E2373007B245F /* ViewController.m */; };
+		A3A0F199156F64F400D9851A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F198156F64F400D9851A /* ViewController.m */; };
+		A3A0F19C156F6D1100D9851A /* Day01RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F19B156F6D1100D9851A /* Day01RootController.m */; };
+		A3A0F19F156F820E00D9851A /* Day01IntController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F19E156F820E00D9851A /* Day01IntController.m */; };
+		A3A0F1A2156F8AB700D9851A /* Day01FloatController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F1A1156F8AB700D9851A /* Day01FloatController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +32,14 @@
 		A39AC2C8156E2373007B245F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A39AC2C9156E2373007B245F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A39AC2CC156E2373007B245F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A39AC2CE156E2373007B245F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A39AC2CF156E2373007B245F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3A0F197156F64F400D9851A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A3A0F198156F64F400D9851A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3A0F19A156F6D1100D9851A /* Day01RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01RootController.h; path = Day01/Day01RootController.h; sourceTree = "<group>"; };
+		A3A0F19B156F6D1100D9851A /* Day01RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01RootController.m; path = Day01/Day01RootController.m; sourceTree = "<group>"; };
+		A3A0F19D156F820E00D9851A /* Day01IntController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01IntController.h; path = Day01/Day01IntController.h; sourceTree = "<group>"; };
+		A3A0F19E156F820E00D9851A /* Day01IntController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01IntController.m; path = Day01/Day01IntController.m; sourceTree = "<group>"; };
+		A3A0F1A0156F8AB700D9851A /* Day01FloatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01FloatController.h; path = Day01/Day01FloatController.h; sourceTree = "<group>"; };
+		A3A0F1A1156F8AB700D9851A /* Day01FloatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01FloatController.m; path = Day01/Day01FloatController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +89,9 @@
 				A39AC2D7156E347F007B245F /* Day01 */,
 				A39AC2C8156E2373007B245F /* AppDelegate.h */,
 				A39AC2C9156E2373007B245F /* AppDelegate.m */,
+				A3A0F197156F64F400D9851A /* ViewController.h */,
+				A3A0F198156F64F400D9851A /* ViewController.m */,
 				A39AC2CB156E2373007B245F /* MainStoryboard.storyboard */,
-				A39AC2CE156E2373007B245F /* ViewController.h */,
-				A39AC2CF156E2373007B245F /* ViewController.m */,
 				A39AC2C0156E2373007B245F /* Supporting Files */,
 			);
 			path = iPhoneStudy;
@@ -102,6 +111,12 @@
 		A39AC2D7156E347F007B245F /* Day01 */ = {
 			isa = PBXGroup;
 			children = (
+				A3A0F19A156F6D1100D9851A /* Day01RootController.h */,
+				A3A0F19B156F6D1100D9851A /* Day01RootController.m */,
+				A3A0F19D156F820E00D9851A /* Day01IntController.h */,
+				A3A0F19E156F820E00D9851A /* Day01IntController.m */,
+				A3A0F1A0156F8AB700D9851A /* Day01FloatController.h */,
+				A3A0F1A1156F8AB700D9851A /* Day01FloatController.m */,
 			);
 			name = Day01;
 			sourceTree = "<group>";
@@ -171,7 +186,10 @@
 			files = (
 				A39AC2C6156E2373007B245F /* main.m in Sources */,
 				A39AC2CA156E2373007B245F /* AppDelegate.m in Sources */,
-				A39AC2D0156E2373007B245F /* ViewController.m in Sources */,
+				A3A0F199156F64F400D9851A /* ViewController.m in Sources */,
+				A3A0F19C156F6D1100D9851A /* Day01RootController.m in Sources */,
+				A3A0F19F156F820E00D9851A /* Day01IntController.m in Sources */,
+				A3A0F1A2156F8AB700D9851A /* Day01FloatController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +301,7 @@
 				A39AC2D5156E2373007B245F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

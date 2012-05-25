@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Day01RootController.h
 //  iPhoneStudy
 //
 //  Created by 磊 徐 on 12-5-25.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-{
-    NSArray *dayList;
-    NSArray *dayPromptList;
-}
+@interface Day01RootController : UIViewController
 
 @end
