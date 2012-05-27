@@ -49,7 +49,7 @@
     char j = '\n';
     char k = '0';
     
-    // char类型可以当作int类型做输出.
+    // char类型可以当作int类型做输出,但不可以作为float或double输出
     NSLog(@"%c",i);//a
     NSLog(@"%i",j);//10
     NSLog(@"%#o",j);//012
