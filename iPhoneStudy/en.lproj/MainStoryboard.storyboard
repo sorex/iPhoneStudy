@@ -97,7 +97,7 @@
                                 <rect key="frame" x="20" y="65" width="280" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="float">
+                                <state key="normal" title="float &amp; double">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,6 +106,21 @@
                                 </state>
                                 <connections>
                                     <segue destination="4O5-jN-Lc5" kind="push" id="1pB-ca-HjN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bzk-zZ-dcD">
+                                <rect key="frame" x="20" y="110" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="char">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6KV-O4-T2j" kind="push" id="kIg-NM-ygO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -125,16 +140,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n7G-tN-h8y">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="n7G-tN-h8y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">初始化：
-int i = 15;//十进制
+                                <string key="text">int i = 15;//十进制
 int j = 050;//八进制前导0
 int k = 0xFf;//十六进制前导0x或者0X
 
-输出:
 NSLog(@"%i",i);//15
 NSLog(@"%o",j);//50
 NSLog(@"%#o",j);//050
@@ -171,7 +184,7 @@ NSLog(@"%#x",k);//0xff
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2065" y="-735"/>
+            <point key="canvasLocation" x="2074" y="-1101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r0L-Hs-ChU">
@@ -188,31 +201,51 @@ NSLog(@"%#x",k);//0xff
             </objects>
             <point key="canvasLocation" x="122" y="139"/>
         </scene>
-        <!--Day01 Float Controller - float-->
+        <!--Day01 Float Double Controller - float & double-->
         <scene sceneID="ufS-9f-dDv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enj-nt-RPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="4O5-jN-Lc5" customClass="Day01FloatController" sceneMemberID="viewController">
+                <viewController id="4O5-jN-Lc5" customClass="Day01FloatDoubleController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5pd-3v-Hvv">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7lu-ch-eNz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="7lu-ch-eNz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">初始化：
-int i = 15;//十进制
-int j = 050;//八进制前导0
-int k = 0xFf;//十六进制前导0x或者0X
-
-输出:
-NSLog(@"%i",i);//15
-NSLog(@"%o",j);//50
-NSLog(@"%#o",j);//050
-NSLog(@"%x",k);//ff
-NSLog(@"%#x",k);//0xff
-</string>
+                                <string key="text">    // float 后带有f或者F
+    float i = 3.f;//浮点计数法
+    float j = 10.2f;//浮点计数法
+    float k = -.5f;//浮点计数法
+    float l = 1.2e-5f;//科学计数法
+    float m = 1.2E2f;//科学计数法
+    float n = 0x0.3p10f;//16进制计数p或P后代表二进制指数3/16*2e10 = 192
+    
+    NSLog(@"%f",i);//3.000000
+    NSLog(@"%e",j);//1.020000e+01
+    NSLog(@"%f",k);//-0.500000
+    NSLog(@"%g",l);//1.2e-05
+    NSLog(@"%g",m);//120
+    NSLog(@"%f",n);//192.000000
+    
+    //%g e的值小于-4或大于5时用%e显示，否则用%f显示，会自动去掉多余的0
+    
+    // double 之后什么都不带
+    double a = 3.;//浮点计数法
+    double b = 10.2;//浮点计数法
+    double c = -.5;//浮点计数法
+    double d = 1.2e-5;//科学计数法
+    double e = 1.2E2;//科学计数法
+    double f = 0x0.3p10;//16进制计数p或P后代表二进制指数3/16*2e10 = 192
+    
+    NSLog(@"%f",a);//3.000000
+    NSLog(@"%e",b);//1.020000e+01
+    NSLog(@"%f",c);//-0.500000
+    NSLog(@"%g",d);//1.2e-05
+    NSLog(@"%g",e);//120
+    NSLog(@"%f",f);//192.000000
+    </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -222,7 +255,7 @@ NSLog(@"%#x",k);//0xff
                                 <items>
                                     <barButtonItem title="执行" id="GUi-Fx-9GY">
                                         <connections>
-                                            <action selector="execute:" destination="4O5-jN-Lc5" id="3UU-ys-IZB"/>
+                                            <action selector="execute:" destination="4O5-jN-Lc5" id="5vp-KC-HXM"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -237,37 +270,70 @@ NSLog(@"%#x",k);//0xff
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="float" id="RVa-Pu-0dd"/>
+                    <navigationItem key="navigationItem" title="float &amp; double" id="RVa-Pu-0dd"/>
                     <connections>
-                        <outlet property="info" destination="OS0-Dw-Tk0" id="R1p-wH-8Kp"/>
+                        <outlet property="info" destination="OS0-Dw-Tk0" id="MZe-Ms-eyq"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2065" y="-135"/>
+            <point key="canvasLocation" x="2074" y="-521"/>
+        </scene>
+        <!--Day01 Char Controller - char-->
+        <scene sceneID="YxW-Z7-3Fc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN6-tV-ScU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6KV-O4-T2j" customClass="Day01CharController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwJ-xt-bec">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fV2-fG-ROo">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="执行" id="p9e-RA-iou">
+                                        <connections>
+                                            <action selector="execute:" destination="6KV-O4-T2j" id="eQR-eG-cNh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Nmd-Oy-F1H">
+                                <rect key="frame" x="57" y="385" width="243" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="DOd-4Y-LXR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">    char i = 'a';
+    char j = '\n';
+    char k = '0';
+    
+    // char类型可以当作int类型做输出
+    NSLog(@"%c",i);//a
+    NSLog(@"%i",j);//10
+    NSLog(@"%#o",j);//012
+    NSLog(@"%x",k);//30
+    NSLog(@"%#x",k);//0x30</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="char" id="2XF-JQ-QnA"/>
+                    <connections>
+                        <outlet property="info" destination="Nmd-Oy-F1H" id="i6P-Se-HBB"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2074" y="76"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="Day01FloatController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01FloatController.h"/>
-            <relationships>
-                <relationship kind="action" name="execute:"/>
-                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="Day01IntController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01IntController.h"/>
-            <relationships>
-                <relationship kind="action" name="execute:"/>
-                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="Day01RootController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01RootController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

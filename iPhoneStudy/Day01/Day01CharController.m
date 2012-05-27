@@ -1,18 +1,18 @@
 //
-//  Day01IntController.m
+//  Day01CharController.m
 //  iPhoneStudy
 //
-//  Created by 磊 徐 on 12-5-25.
+//  Created by 磊 徐 on 12-5-27.
 //  Copyright (c) 2012年 sorex. All rights reserved.
 //
 
-#import "Day01IntController.h"
+#import "Day01CharController.h"
 
-@interface Day01IntController ()
+@interface Day01CharController ()
 
 @end
 
-@implementation Day01IntController
+@implementation Day01CharController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,16 +45,18 @@
 
 -(IBAction)execute:(id)sender
 {
-    int i = 15;//十进制
-    int j = 050;//八进制前导0
-    int k = 0xFf;//十六进制前导0x或者0X
+    char i = 'a';
+    char j = '\n';
+    char k = '0';
     
-    NSLog(@"%i",i);//15
-    NSLog(@"%o",j);//50
-    NSLog(@"%#o",j);//050
-    NSLog(@"%x",k);//ff
-    NSLog(@"%#x",k);//0xff
-    
+    // char类型可以当作int类型做输出
+    NSLog(@"%c",i);//a
+    NSLog(@"%i",j);//10
+    NSLog(@"%#o",j);//012
+    NSLog(@"%x",k);//30
+    NSLog(@"%#x",k);//0x30
+
     info.text = @"执行完毕，请查看Output窗口。";
 }
+
 @end
