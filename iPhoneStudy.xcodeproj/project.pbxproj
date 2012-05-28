@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A343524515731497001DE0E4 /* Day01NSNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = A343524415731497001DE0E4 /* Day01NSNumberController.m */; };
+		A343524915731AB5001DE0E4 /* Day01NSStringController.m in Sources */ = {isa = PBXBuildFile; fileRef = A343524815731AB5001DE0E4 /* Day01NSStringController.m */; };
+		A343524C15735AAB001DE0E4 /* Day01NSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = A343524B15735AAB001DE0E4 /* Day01NSArrayController.m */; };
+		A343524F15738162001DE0E4 /* Day01NSDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = A343524E15738162001DE0E4 /* Day01NSDictionaryController.m */; };
 		A39AC2BA156E2373007B245F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39AC2B9156E2373007B245F /* UIKit.framework */; };
 		A39AC2BC156E2373007B245F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39AC2BB156E2373007B245F /* Foundation.framework */; };
 		A39AC2BE156E2373007B245F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39AC2BD156E2373007B245F /* CoreGraphics.framework */; };
@@ -22,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A343524315731497001DE0E4 /* Day01NSNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01NSNumberController.h; path = Day01/Day01NSNumberController.h; sourceTree = "<group>"; };
+		A343524415731497001DE0E4 /* Day01NSNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01NSNumberController.m; path = Day01/Day01NSNumberController.m; sourceTree = "<group>"; };
+		A343524715731AB5001DE0E4 /* Day01NSStringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01NSStringController.h; path = Day01/Day01NSStringController.h; sourceTree = "<group>"; };
+		A343524815731AB5001DE0E4 /* Day01NSStringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01NSStringController.m; path = Day01/Day01NSStringController.m; sourceTree = "<group>"; };
+		A343524A15735AAB001DE0E4 /* Day01NSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01NSArrayController.h; path = Day01/Day01NSArrayController.h; sourceTree = "<group>"; };
+		A343524B15735AAB001DE0E4 /* Day01NSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01NSArrayController.m; path = Day01/Day01NSArrayController.m; sourceTree = "<group>"; };
+		A343524D15738162001DE0E4 /* Day01NSDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01NSDictionaryController.h; path = Day01/Day01NSDictionaryController.h; sourceTree = "<group>"; };
+		A343524E15738162001DE0E4 /* Day01NSDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01NSDictionaryController.m; path = Day01/Day01NSDictionaryController.m; sourceTree = "<group>"; };
 		A39AC2B5156E2373007B245F /* iPhoneStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39AC2B9156E2373007B245F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A39AC2BB156E2373007B245F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,6 +134,14 @@
 				A3A0F1A1156F8AB700D9851A /* Day01FloatDoubleController.m */,
 				CD05FB5515726D9D0035E020 /* Day01CharController.h */,
 				CD05FB5615726D9D0035E020 /* Day01CharController.m */,
+				A343524315731497001DE0E4 /* Day01NSNumberController.h */,
+				A343524415731497001DE0E4 /* Day01NSNumberController.m */,
+				A343524715731AB5001DE0E4 /* Day01NSStringController.h */,
+				A343524815731AB5001DE0E4 /* Day01NSStringController.m */,
+				A343524A15735AAB001DE0E4 /* Day01NSArrayController.h */,
+				A343524B15735AAB001DE0E4 /* Day01NSArrayController.m */,
+				A343524D15738162001DE0E4 /* Day01NSDictionaryController.h */,
+				A343524E15738162001DE0E4 /* Day01NSDictionaryController.m */,
 			);
 			name = Day01;
 			sourceTree = "<group>";
@@ -196,6 +216,10 @@
 				A3A0F19F156F820E00D9851A /* Day01IntController.m in Sources */,
 				A3A0F1A2156F8AB700D9851A /* Day01FloatDoubleController.m in Sources */,
 				CD05FB5715726D9D0035E020 /* Day01CharController.m in Sources */,
+				A343524515731497001DE0E4 /* Day01NSNumberController.m in Sources */,
+				A343524915731AB5001DE0E4 /* Day01NSStringController.m in Sources */,
+				A343524C15735AAB001DE0E4 /* Day01NSArrayController.m in Sources */,
+				A343524F15738162001DE0E4 /* Day01NSDictionaryController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
