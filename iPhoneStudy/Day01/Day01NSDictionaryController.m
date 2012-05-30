@@ -45,8 +45,24 @@
 
 -(IBAction)execute:(id)sender
 {
-    NSDictionary *dic;
-    NSMutableDictionary *mdic;
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"this is a.",@"a",@"this is b.",@"b",@"this is c.",@"c", nil];
+    
+    for (NSString *key in dic) 
+    {
+        NSLog(@"%@:%@",key,[dic objectForKey:key]);
+    }
+    
+    NSMutableDictionary *mdic = [NSMutableDictionary dictionary];
+    [mdic setObject:@"this A" forKey:@"a"];
+    [mdic setObject:@"this B" forKey:@"b"];
+    [mdic setObject:@"this C" forKey:@"c"];
+    
+    [mdic removeObjectForKey:@"b"];
+    
+    for (NSString *key in mdic) 
+    {
+        NSLog(@"%@:%@",key,[mdic objectForKey:key]);
+    }    
     
     info.text = @"执行完毕，请查看Output窗口。";
 }

@@ -35,9 +35,13 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    dayList = [[NSArray alloc] initWithObjects:@"Day01"
+    dayList = [[NSArray alloc] initWithObjects
+               :@"Day01"
+               ,@"Day02"
                , nil];
-    dayPromptList = [[NSArray alloc] initWithObjects:@"Objective C 数据类型"
+    dayPromptList = [[NSArray alloc] initWithObjects
+                     :@"Objective C 数据类型"
+                     ,@"Objective C 关键字"
                      , nil];
 }
 

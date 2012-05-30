@@ -32,6 +32,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="cMk-mW-XmA" kind="push" identifier="ToDay01" id="rBy-zk-ahR"/>
+                        <segue destination="BMY-u9-BCh" kind="push" id="nCU-jj-758"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -112,7 +113,69 @@
                     <navigationItem key="navigationItem" title="Day01" prompt="@" id="VXs-p7-3eO"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1189" y="-500"/>
+            <point key="canvasLocation" x="1189" y="-228"/>
+        </scene>
+        <!--Day02 Root Controller - Day02-->
+        <scene sceneID="OiS-06-Azu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gch-vm-6K5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Day02" id="BMY-u9-BCh" customClass="Day02RootController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYz-p5-DpO">
+                        <rect key="frame" x="0.0" y="94" width="320" height="386"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DIc-2T-5aE">
+                                <rect key="frame" x="20" y="20" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="@interface">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="interface:" destination="BMY-u9-BCh" eventType="touchUpInside" id="Lmz-Ie-FNd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Day02" prompt="@" id="C9X-Jr-3sC"/>
+                    <connections>
+                        <segue destination="75O-WC-nUM" kind="push" id="6Wf-RR-89I"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1189" y="2513"/>
+        </scene>
+        <!--Day02 View Controller-->
+        <scene sceneID="1ir-EK-JAZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4r7-vo-lK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Day02View" id="75O-WC-nUM" customClass="Day02ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKh-kX-fnl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="txy-oX-gEb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ESb-VM-Vna"/>
+                    <connections>
+                        <outlet property="tv" destination="txy-oX-gEb" id="6XF-rE-uBU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1634" y="2513"/>
         </scene>
         <!--View Controller - 基本类型-->
         <scene sceneID="78s-uY-f8N">
@@ -354,7 +417,7 @@ NSLog(@"%#x",k);//0xff
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">long（位宽32，int位宽也是32）
+                                <string key="text">long（位宽32，int位宽也是32）
 申明后缀位L，输出前缀为l。
 long int num = 10L;
 NSLog(@"%li",num);//10
@@ -379,7 +442,7 @@ NSLog(@"%lu",n);//10
 
 signed（主要用于char）
 明确告诉编译器该变量是有符号的
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -531,7 +594,7 @@ long double > double > float > long long int > long int > int</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">    NSNumber *i, *j, *k, *m;
+                                <string key="text">    NSNumber *i, *j, *k, *m;
     i = [NSNumber numberWithInt:10];//用int声明
     m = [NSNumber numberWithInteger:100];//用int声明，NSInteger是重新定义的int/long
     j = [NSNumber numberWithFloat:15.f];//用float声明
@@ -548,7 +611,7 @@ long double > double > float > long long int > long int > int</string>
         
     //判断相等使用 isEqualToNumber: ,返回BOOL值
     //判断大小使用 compare: , A&lt;B返回 NSOrderedAscending, A==B返回 NSOrderedSame, A>B返回NSOrderedDescending
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -632,13 +695,28 @@ long double > double > float > long long int > long int > int</string>
                                     <segue destination="YqW-B2-dQv" kind="push" id="ktw-Mt-teT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fkn-YZ-PV7">
+                                <rect key="frame" x="20" y="200" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NSSet">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GpW-em-NC9" kind="push" id="CKD-28-ziS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Foundation基本对象" id="Ijb-fn-z2w"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1813" y="99"/>
+            <point key="canvasLocation" x="1813" y="690"/>
         </scene>
         <!--Day01NS String Controller - NSString-->
         <scene sceneID="BD9-H0-Bk0">
@@ -718,8 +796,25 @@ Day01NSStringController.m</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">详见代码
-Day01NSDictionaryController.m</string>
+                                <mutableString key="text">    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"this is a.",@"a",@"this is b.",@"b",@"this is c.",@"c", nil];
+    
+    for (NSString *key in dic) 
+    {
+        NSLog(@"%@:%@",key,[dic objectForKey:key]);
+    }
+    
+    NSMutableDictionary *mdic = [NSMutableDictionary dictionary];
+    [mdic setObject:@"this A" forKey:@"a"];
+    [mdic setObject:@"this B" forKey:@"b"];
+    [mdic setObject:@"this C" forKey:@"c"];
+    
+    [mdic removeObjectForKey:@"b"];
+    
+    for (NSString *key in mdic) 
+    {
+        NSLog(@"%@:%@",key,[mdic objectForKey:key]);
+    }    
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -732,7 +827,7 @@ Day01NSDictionaryController.m</string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1888" y="732"/>
+            <point key="canvasLocation" x="2374" y="1324"/>
         </scene>
         <!--Day01NS Array Controller - NSArray-->
         <scene sceneID="LXf-vb-0nQ">
@@ -781,7 +876,118 @@ Day01NSArrayController.m</string>
             </objects>
             <point key="canvasLocation" x="2374" y="690"/>
         </scene>
+        <!--View Controller - NSSet-->
+        <scene sceneID="EZu-ZE-b44">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ej-4J-xCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GpW-em-NC9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yaP-cA-Fz5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="j8c-p3-8ak">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">NSSet是集合类
++(id)setWithObjects:obj1,obj2,...,nil 创建新集合
+-(id)initWithObjects:obj1,obj2,...,nil 初始化集合
+-(NSUInteger)count                        集合成员数
+-(BOOL)containsObject:obj    集合中是否包含obj
+-(BOOL)member:obj    使用isEqual判断是否包含
+-(BOOL)isSubsetOfSet:B  是否所有成员都在B中
+-(BOOL)intersectsSet:B    是否有成员在B中
+-(BOOL)isEqualToSet:B    是否两个集合相等
+
+NSMutableSet
+-(void)addObject:obj       添加成员
+-(void)removeObject:obj  删除指定成员
+-(void)removeAllObjects  删除所有成员
+-(void)unionSet:B      将B的所有成员加入
+-(void)minusSet:B     删除也在B中的成员
+-(void)intersectSet:B  将不属于B的成员删除
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSSet" id="p41-mr-QQr"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2374" y="1918"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="Day01CharController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01CharController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01FloatDoubleController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01FloatDoubleController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01IntController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01IntController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01NSArrayController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01NSArrayController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01NSDictionaryController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01NSDictionaryController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01NSNumberController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01NSNumberController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01NSStringController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01NSStringController.h"/>
+            <relationships>
+                <relationship kind="action" name="execute:"/>
+                <relationship kind="outlet" name="info" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Day01RootController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day01RootController.h"/>
+        </class>
+        <class className="Day02RootController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day02RootController.h"/>
+            <relationships>
+                <relationship kind="action" name="interface:"/>
+            </relationships>
+        </class>
+        <class className="Day02ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Day02ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tv" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

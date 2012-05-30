@@ -18,10 +18,13 @@
 		A39AC2C6156E2373007B245F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A39AC2C5156E2373007B245F /* main.m */; };
 		A39AC2CA156E2373007B245F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A39AC2C9156E2373007B245F /* AppDelegate.m */; };
 		A39AC2CD156E2373007B245F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39AC2CB156E2373007B245F /* MainStoryboard.storyboard */; };
+		A39C49951575EE3A002D6C93 /* Day02DemoClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = A39C49941575EE3A002D6C93 /* Day02DemoClassA.m */; };
 		A3A0F199156F64F400D9851A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F198156F64F400D9851A /* ViewController.m */; };
 		A3A0F19C156F6D1100D9851A /* Day01RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F19B156F6D1100D9851A /* Day01RootController.m */; };
 		A3A0F19F156F820E00D9851A /* Day01IntController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F19E156F820E00D9851A /* Day01IntController.m */; };
 		A3A0F1A2156F8AB700D9851A /* Day01FloatDoubleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A0F1A1156F8AB700D9851A /* Day01FloatDoubleController.m */; };
+		A3A375C21574AB7800482DC3 /* Day02RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A375C11574AB7800482DC3 /* Day02RootController.m */; };
+		A3A375C51574AE8400482DC3 /* Day02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A375C41574AE8400482DC3 /* Day02ViewController.m */; };
 		CD05FB5715726D9D0035E020 /* Day01CharController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05FB5615726D9D0035E020 /* Day01CharController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,8 @@
 		A39AC2C8156E2373007B245F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A39AC2C9156E2373007B245F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A39AC2CC156E2373007B245F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A39C49931575EE3A002D6C93 /* Day02DemoClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; name = Day02DemoClassA.h; path = Day02/Day02DemoClassA.h; sourceTree = "<group>"; };
+		A39C49941575EE3A002D6C93 /* Day02DemoClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day02DemoClassA.m; path = Day02/Day02DemoClassA.m; sourceTree = "<group>"; };
 		A3A0F197156F64F400D9851A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A3A0F198156F64F400D9851A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A3A0F19A156F6D1100D9851A /* Day01RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01RootController.h; path = Day01/Day01RootController.h; sourceTree = "<group>"; };
@@ -53,6 +58,10 @@
 		A3A0F19E156F820E00D9851A /* Day01IntController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01IntController.m; path = Day01/Day01IntController.m; sourceTree = "<group>"; };
 		A3A0F1A0156F8AB700D9851A /* Day01FloatDoubleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01FloatDoubleController.h; path = Day01/Day01FloatDoubleController.h; sourceTree = "<group>"; };
 		A3A0F1A1156F8AB700D9851A /* Day01FloatDoubleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01FloatDoubleController.m; path = Day01/Day01FloatDoubleController.m; sourceTree = "<group>"; };
+		A3A375C01574AB7800482DC3 /* Day02RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day02RootController.h; path = Day02/Day02RootController.h; sourceTree = "<group>"; };
+		A3A375C11574AB7800482DC3 /* Day02RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day02RootController.m; path = Day02/Day02RootController.m; sourceTree = "<group>"; };
+		A3A375C31574AE8400482DC3 /* Day02ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day02ViewController.h; path = Day02/Day02ViewController.h; sourceTree = "<group>"; };
+		A3A375C41574AE8400482DC3 /* Day02ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day02ViewController.m; path = Day02/Day02ViewController.m; sourceTree = "<group>"; };
 		CD05FB5515726D9D0035E020 /* Day01CharController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Day01CharController.h; path = Day01/Day01CharController.h; sourceTree = "<group>"; };
 		CD05FB5615726D9D0035E020 /* Day01CharController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Day01CharController.m; path = Day01/Day01CharController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A39AC2D7156E347F007B245F /* Day01 */,
+				A3A375BF1574AB4900482DC3 /* Day02 */,
 				A39AC2C8156E2373007B245F /* AppDelegate.h */,
 				A39AC2C9156E2373007B245F /* AppDelegate.m */,
 				A3A0F197156F64F400D9851A /* ViewController.h */,
@@ -144,6 +154,19 @@
 				A343524E15738162001DE0E4 /* Day01NSDictionaryController.m */,
 			);
 			name = Day01;
+			sourceTree = "<group>";
+		};
+		A3A375BF1574AB4900482DC3 /* Day02 */ = {
+			isa = PBXGroup;
+			children = (
+				A3A375C01574AB7800482DC3 /* Day02RootController.h */,
+				A3A375C11574AB7800482DC3 /* Day02RootController.m */,
+				A3A375C31574AE8400482DC3 /* Day02ViewController.h */,
+				A3A375C41574AE8400482DC3 /* Day02ViewController.m */,
+				A39C49931575EE3A002D6C93 /* Day02DemoClassA.h */,
+				A39C49941575EE3A002D6C93 /* Day02DemoClassA.m */,
+			);
+			name = Day02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +243,9 @@
 				A343524915731AB5001DE0E4 /* Day01NSStringController.m in Sources */,
 				A343524C15735AAB001DE0E4 /* Day01NSArrayController.m in Sources */,
 				A343524F15738162001DE0E4 /* Day01NSDictionaryController.m in Sources */,
+				A3A375C21574AB7800482DC3 /* Day02RootController.m in Sources */,
+				A3A375C51574AE8400482DC3 /* Day02ViewController.m in Sources */,
+				A39C49951575EE3A002D6C93 /* Day02DemoClassA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
